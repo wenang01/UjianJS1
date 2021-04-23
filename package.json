@@ -1,0 +1,11 @@
+{
+  "name": "ujianjavascriptbasic",
+  "version": "1.0.0",
+  "description": "ujian javascript 1 basic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dedi Aji Wenang",
+  "license": "ISC"
+}
