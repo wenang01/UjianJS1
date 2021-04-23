@@ -59,21 +59,23 @@ function selangSeling(dimensi) {
   console.log(hasil);
 }
 
-gambarPola(6);
+gambarPola(5);
 function gambarPola(dimensi) {
   let count = 0;
   let hasil = "";
   let x, y;
   for (x = 0; x < dimensi; x++) {
+    count++;
+    let countTemp = 0;
     for (y = 0; y < dimensi; y++) {
-      count++;
-      let countTemp = 0;
-      for (let z = 1; z <= count; z++) {
-        if (count == z) {
-          countTemp++;
-          hasil += "*";
-        } else {
+      if (count % 2 == 0) {
+        countTemp++;
+      }
+      for (let z = 0; z <= y; z++) {
+        if (countTemp % 2 == z) {
           hasil += "!";
+        } else {
+          hasil += "*";
         }
       }
     }
