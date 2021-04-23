@@ -60,4 +60,24 @@ function selangSeling(dimensi) {
 }
 
 gambarPola(6);
-function gambarPola(dimensi) {}
+function gambarPola(dimensi) {
+  let count = 0;
+  let hasil = "";
+  let x, y;
+  for (x = 0; x < dimensi; x++) {
+    for (y = 0; y < dimensi; y++) {
+      count++;
+      let countTemp = 0;
+      for (let z = 1; z <= count; z++) {
+        if (count == z) {
+          countTemp++;
+          hasil += "*";
+        } else {
+          hasil += "!";
+        }
+      }
+    }
+    hasil += "\n";
+  }
+  console.log(hasil);
+}
