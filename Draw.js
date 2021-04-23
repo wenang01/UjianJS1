@@ -74,9 +74,6 @@ function gambarPola(dimensi) {
       if (x == y) {
         hasil += "!";
       }
-      //   else {
-      //     hasil += "*";
-      //   }
     }
     hasil += "\n";
   }
