@@ -64,22 +64,22 @@ function gambarPola(dimensi) {
   let count = 0;
   let hasil = "";
   let x, y;
+
   for (x = 0; x < dimensi; x++) {
     count++;
     let countTemp = 0;
     for (y = 0; y < dimensi; y++) {
-      if (count % 2 == 0) {
-        countTemp++;
+      countTemp++;
+      hasil += "*";
+      if (x == y) {
+        hasil += "!";
       }
-      for (let z = 0; z <= y; z++) {
-        if (countTemp % 2 == z) {
-          hasil += "!";
-        } else {
-          hasil += "*";
-        }
-      }
+      //   else {
+      //     hasil += "*";
+      //   }
     }
     hasil += "\n";
   }
+
   console.log(hasil);
 }
