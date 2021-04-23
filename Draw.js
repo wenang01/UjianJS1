@@ -59,19 +59,19 @@ function selangSeling(dimensi) {
   console.log(hasil);
 }
 
-gambarPola(4);
-function gambarPola(dimensi) {
+gambarPola(5, 4);
+function gambarPola(dimensiP, dimensiL) {
   let count = 0;
   let hasil = "";
   let x, y;
 
-  for (x = 0; x < dimensi; x++) {
+  for (x = 0; x < dimensiP; x++) {
     count++;
-    // let countTemp = 0;
-    for (y = 0; y < dimensi; y++) {
-      // countTemp++;
+    let countTemp = 0;
+    for (y = 0; y < dimensiL; y++) {
+      countTemp++;
       hasil += "*";
-      if (x % 2 == y) {
+      if (count % 2 == y) {
         hasil += "!";
       }
     }
