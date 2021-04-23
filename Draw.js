@@ -59,7 +59,7 @@ function selangSeling(dimensi) {
   console.log(hasil);
 }
 
-gambarPola(5);
+gambarPola(4);
 function gambarPola(dimensi) {
   let count = 0;
   let hasil = "";
@@ -67,11 +67,11 @@ function gambarPola(dimensi) {
 
   for (x = 0; x < dimensi; x++) {
     count++;
-    let countTemp = 0;
+    // let countTemp = 0;
     for (y = 0; y < dimensi; y++) {
-      countTemp++;
+      // countTemp++;
       hasil += "*";
-      if (x == y) {
+      if (x % 2 == y) {
         hasil += "!";
       }
     }
